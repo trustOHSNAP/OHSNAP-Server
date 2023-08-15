@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "OHSNAP Schematic Library")(type "KiCad")(uri "${KIPRJMOD}/Libraries/OHSNAP symbols/OHSNAP Schematic Library.kicad_sym")(options "")(descr ""))
+)
