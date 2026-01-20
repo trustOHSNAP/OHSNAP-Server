@@ -1,0 +1,380 @@
+Table 1
+Pin Number,Pin Name,Pin Name,Used on Dev-PoC-1,GPIO Group,GPIO,UART,[Q]SPI,I2C,I2S,CAN,PWM,ADC,USB,ExtInt,Timer,Flash,SD/MMC,Enet,Smart Card,Video,JTAG,EBI,Critical,Power
+1,USB0_ID,USB0 Host/Device identification,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+2,"PA.0
+QSPI0_SS1 
+I2C0_SDA
+UART1_RXD
+EINT0
+TM0_ECNT
+CAN3_RXD ","General purpose digital I/O pin Quad SPI0 slave select 1 pin I2C0 data input/output pin UART1 data receiver input pin External interrupt 0 input pin Timer0 event counter input/toggle output pin
+CAN3 bus receiver input ",FALSE,Port A,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+3,"PA.1
+EBI_nCS2 
+EBI_MCLK
+I2C0_SCL
+UART1_TXD
+EINT1
+TM1_ECNT
+CAN3_TXD ","General purpose digital I/O pin
+EBI chip select 2 output pin
+EBI external clock output pin
+I2C0 clock pin 
+UART1 data transmitter output pin External interrupt 1 input pin Timer1 event counter input/toggle output pin 
+CAN3 bus transmitter output",FALSE,Port A,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+4,"PA.2
+UART6_CTS 
+I2S_LRCK
+SC0_CD
+JTAG1_TDO
+TM2_ECNT ","General purpose digital I/O pin UART6 clear to Send input pin I2S left right channel clock output pin Smart Card 0 card detect pin JTAG1 data output pin Timer2 event counter input/toggle output pin ",TRUE,Port A,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+5,"PA.3
+UART6_RTS
+I2S_BCLK
+SC0_PWR
+JTAG1_TCK
+TM3_ECNT","General purpose digital I/O pin UART6 request to Send output pin I2S bit clock output pin Smart Card 0 power pin JTAG1 clock input pin 
+Timer3 event counter input/toggle output pin ",TRUE,Port A,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+6,"PA.4
+UART6_RXD
+I2S_DI
+SC0_DAT
+JTAG1_TMS
+TM4_ECNT ","General purpose digital I/O pin UART6 data receiver input pin I2S data input pin 
+Smart Card 0 data pin JTAG1 test mode selection input pin Timer4 event counter input/toggle output pin ",TRUE,Port A,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+7,"PA.5
+UART6_TXD
+I2S_DO
+SC0_CLK
+JTAG1_TDI
+TM5_ECNT","General purpose digital I/O pin UART6 data transmitter output pin I2S data output pin Smart Card 0 clock pin JTAG1 data input pin Timer5 event counter input/toggle output pin ",TRUE,Port A,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+8,"PA.6
+EBI_nCS1
+I2S_MCLK
+SC0_RST
+JTAG1_nTRST","General purpose digital I/O pin EBI chip select 1 output pin I2S master clock output pin Smart Card 0 reset pin JTAG1 reset input pin",TRUE,Port A,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE
+9,VDD33,IO power 3.3V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+10,VDD12,Core power 1.2V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+11,MVDD,Memory power 1.8V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+12,VDD12 ,Core power 1.2V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+13,VDD33,IO power 3.3V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+14,"PG.1
+EBI_ADDR1
+UART2_TXD
+PWM01
+CFG.1_PwrOnSet1","General purpose digital I/O pin 
+EBI address bus bit 1 
+UART2 data transmitter output pin 
+PWM01 counter synchronous trigger output pin 
+System configuration and power on setting",TRUE,Port G,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+15,"PG.0
+EBI_ADDR0
+UART2_RXD
+CLK_OUT
+PWM00
+CFG.0_PwrOnSet0","General purpose digital I/O pin 
+EBI address bus bit 0 
+UART2 data receiver input pin 
+Internal clock selection output pin 
+PWM00 counter synchronous trigger output pin 
+System configuration and power on setting",TRUE,Port G,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+16,"PB.6
+EBI_ADDR13 
+I2C1_SDA
+I2S_LRCK
+USBHL0_DM
+UART7_TXD
+SPI1_SS0
+ADC_AIN6 ","General purpose digital I/O pin
+EBI address bus bit 13 
+I2C1 data input/output pin I2S left right channel clock output pin USB 1.1 host lite port 0 differential signal D-
+UART7 data transmitter output pin SPI1 slave select 0 pin 
+ADC channel 6 analog input ",FALSE,Port B,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+17,"PB.4
+EBI_ADDR14
+I2C1_SCL
+I2S_BCLK
+USBHL0_DP
+UART7_RXD
+SPI1_CLK
+ADC_AIN4 ","General purpose digital I/O pin
+EBI address bus bit 14 I2C1 clock pin 
+I2S bit clock output pin USB 1.1 host lite port 0 differential signal D+
+UART7 data receiver input pin SPI1 serial clock pin ADC channel 4 analog input",FALSE,Port B,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+18,AVDD33,ADC power 3.3V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+19,"PC.3
+EBI_DATA3
+VCAP0_CLKO
+NAND_ALE
+I2C1_SCL
+UART3_TXD
+CAN0_RXD","General purpose digital I/O pin EBI data bus bit 3 Video image interface 0 sensor clock pin
+NAND flash address latch enable I2C1 clock pin UART3 data transmitter output pin CAN0 bus receiver input",TRUE,Port C,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+20,"PC.4
+EBI_DATA4
+VCAP0_PCLK
+NAND_CLE
+I2C1_SDA
+UART3_RXD
+SPI0_MOSI
+CAN0_TXD ","General purpose digital I/O pin EBI data bus bit 4 Video image interface 0 pixel clock pin
+NAND flash command latch enable I2C1 data input/output pin UART3 data receiver input pin SPI0 MOSI (Master Out, Slave In) pin
+CAN0 bus transmitter output",FALSE,Port C,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+21,"PC.5
+EBI_DATA5 VCAP0_HSYNC
+NAND_nWE
+SPI0_SS0
+SD0_CMD/eMMC0_CMD
+UART1_TXD","General purpose digital I/O pin 
+EBI data bus bit 5 
+Video image interface 0 horizontal sync
+NAND flash write enable 
+SPI0 slave select 0 pin 
+SD0 / eMMC0 command/response pin
+UART1 data transmitter output pin ",FALSE,Port C,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+22,"PC.6
+EBI_DATA6 
+VCAP0_VSYNC 
+NAND_nRE 
+SC1_RST 
+SPI0_CLK 
+SD0_CLK/eMMC0_CLK 
+UART1_RXD","General purpose digital I/O pin
+EBI data bus bit 6 
+Video image interface 0 vertical sync
+NAND flash read enable Smart Card 1 reset pin SPI0 serial clock pin 
+SD0 / eMMC0 clock output pin 
+UART1 data receiver input pin",FALSE,Port C,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+23,"PC.8
+EBI_DATA8
+VCAP0_DATA0
+NAND_DATA0
+SC1_DAT
+SPI0_MISO 
+SD0_DATA1/eMMC0_DATA1 
+UART1_CTS ","General purpose digital I/O pin
+EBI data bus bit 8 Video image interface 0 data 0 pin
+NAND flash data bus bit 0 
+Smart Card 1 data pin SPI0 MISO (Master In, Slave Out) pin 
+SD0  / eMMC0 data line bit 1 
+UART1 clear to Send input pin ",FALSE,Port C,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+24,"PC.9 
+EBI_DATA9 
+VCAP0_DATA1 
+NAND_DATA1 
+SC1_PWR 
+SD0_DATA2/eMMC0_DATA2 
+UART4_TXD ","General purpose digital I/O pin
+EBI data bus bit 9 
+Video image interface 0 data 1 pin
+NAND flash data bus bit 1 Smart Card 1 power pin SD0 / eMMC0 data line bit 2 
+UART4 data transmitter output pin ",FALSE,Port C,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+25,"PC.10 
+EBI_DATA10 
+VCAP0_DATA2 
+NAND_DATA2 
+SC1_CD 
+SD0_DATA3/eMMC0_DATA3
+UART4_RXD","General purpose digital I/O pin 
+EBI data bus bit 10 
+Video image interface 0 data 2 pin 
+NAND flash data bus bit 2 
+Smart Card 1 card detect pin 
+SD0 data line bit 3 eMMC0 data line bit 3 
+UART4 data receiver input pin ",FALSE,Port C,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+26,"PC.11 EBI_DATA11 VCAP0_DATA3 NAND_DATA3 SC0_RST","General purpose digital I/O pin
+EBI data bus bit 11 Video image interface 0 data 3 pin
+NAND flash data bus bit 3 
+Smart Card 0 reset pin",TRUE,Port C,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+27,"PC.12 EBI_DATA12 VCAP0_DATA4 NAND_DATA4 SC0_CLK
+SD0_nCD
+UART8_TXD","General purpose digital I/O pin
+EBI data bus bit 12 Video image interface 0 data 4 pin
+NAND flash data bus bit 4 Smart Card 0 clock pin SD0 card detect input pin UART8 data transmitter output pin",FALSE,Port C,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+28,"PC.13
+EBI_DATA13
+VCAP0_DATA5
+NAND_DATA5
+SC0_DAT
+UART8_RXD","General purpose digital I/O pin
+EBI data bus bit 13 Video image interface 0 data 5 pin
+NAND flash data bus bit 5 
+Smart Card 0 data pin UART8 data receiver input pin",FALSE,Port C,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+29,"PC.14
+EBI_DATA14
+VCAP0_DATA6
+NAND_DATA6
+SC0_PWR
+SPI0_MOSI
+UART8_RTS","General purpose digital I/O pin EBI data bus bit 14 Video image interface 0 data 6 pin
+NAND flash data bus bit 6 Smart Card 0 power pin SPI0 MOSI (Master Out, Slave In) pin
+UART8 request to Send output pin ",FALSE,Port C,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+30,"PC.15
+EBI_DATA15
+VCAP0_DATA7
+NAND_DATA7
+SC0_CD UART8_CTS","General purpose digital I/O pin EBI data bus bit 15 Video image interface 0 data 7 pin
+NAND flash date bus bit 7 Smart Card 0 card detect pin UART8 clear to Send input pin",TRUE,Port C,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE
+31,VDD12,Core power 1.2V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+32,VDD33,IO power 3.3V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+33,"PD.2
+QSPI0_SS0 
+UART3_TXD 
+TM4_EXT","General purpose digital I/O pin 
+Quad SPI0 slave select 0 pin.(booting) 
+UART3 data transmitter output pin 
+Timer4 external capture input/toggle output pin ",TRUE,Port D,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+34,"PD.3
+QSPI0_CLK
+UART3_RXD
+TM4_TGL","General purpose digital I/O pin 
+Quad SPI0 serial clock pin.(booting) 
+UART3 data receiver input pin 
+Timer4 event counter input/toggle output pin ",TRUE,Port D,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+35,"PD.4
+QSPI0_MOSI0
+UART3_RTS
+TM5_EXT","General purpose digital I/O pin 
+Quad SPI0 MOSI0. Data 0 of quad mode.(booting) 
+UART3 request to Send output pin Timer5 external capture input/toggle output pin",TRUE,Port D,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+36,"PD.5
+QSPI0_MISO0
+UART3_CTS
+TM5_TGL","General purpose digital I/O pin 
+Quad SPI0 MISO0. Data 1 of quad mode.(booting) 
+UART3 clear to Send input pin 
+Timer5 event counter input/toggle output pin ",TRUE,Port D,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+37,"nRESET 
+WDT_nRST ","External reset
+Watch dog timer reset trigger output",TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+38,VDD12 ,Core power 1.2V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+39,MVDD,Memory power 1.8V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+40,VDD33,IO power 3.3V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+41,"PF.0
+RMII1_RXERR 
+SD1_CMD/eMMC1_CMD 
+TM0_ECNT
+SC1_RST
+UART7_CTS
+USBHL1_DM 
+EBI_DATA5 ","General purpose digital I/O pin 
+RMII1 Receive Data Error input pin 
+SD1 / eMMC1 command/response pin 
+Timer0 event counter input/toggle output pin
+Smart Card 1 reset pin 
+UART7 clear to Send input pin 
+USB 1.1 host lite port 1 differential signal D- 
+EBI data bus bit 5 ",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE
+42,"PF.1 
+RMII1_CRSDV 
+SD1_CLK/eMMC1_CLK 
+TM1_ECNT
+SC1_CLK
+UART7_RTS
+USBHL1_DP
+EBI_DATA6 ","General purpose digital I/O pin 
+RMII1 Carrier Sense/Receive Data input pin 
+SD1 / eMMC1 clock output pin 
+Timer1 event counter input/toggle output pin
+Smart Card 1 clock pin UART7 request to Send output pin USB 1.1 host lite port 1 differential signal D+
+EBI data bus bit 6 ",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE
+43,"PF.2
+RMII1_RXD1 
+SD1_DATA0/eMMC1_DATA0 
+TM2_ECNT
+SC1_DAT
+UART7_RXD
+USBHL2_DM
+EBI_DATA7 ","General purpose digital I/O pin
+RMII1 Receive Data bus bit 1 
+SD1 / eMMC1 data line bit 0 
+Timer2 event counter input/toggle output pin
+Smart Card 1 data pin UART7 data receiver input pin USB 1.1 host lite port 2 differential signal D-
+EBI data bus bit 7",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE
+44,"PF.3
+RMII1_RXD0 
+SD1_DATA1/eMMC1_DATA1 
+TM3_ECNT
+SC1_PWR
+UART7_TXD
+USBHL2_DP
+EBI_DATA8 ","General purpose digital I/O pin
+RMII1 Receive Data bus bit 0 
+SD1 data line bit 1 eMMC1 data line bit 1 
+Timer3 event counter input/toggle output pin
+Smart Card 1 power pin UART7 data transmitter output pin USB 1.1 host lite port 2 differential signal D+
+EBI data bus bit 8 ",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE
+45,"PF.4
+RMII1_REFCLK 
+SD1_DATA2/eMMC1_DATA2
+TM4_ECNT 
+SC1_CD 
+UART3_CTS 
+USBHL3_DM 
+EBI_DATA9 ","General purpose digital I/O pin
+RMII1 mode clock input pin
+SD1 / eMMC1 data line bit 2 
+Timer4 event counter input/toggle output pin 
+Smart Card 1 card detect pin 
+UART3 clear to Send input pin 
+USB 1.1 host lite port 3 differential signal D- 
+EBI data bus bit 9 ",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE
+46,"PF.5 
+RMII1_TXEN
+SD1_DATA3/eMMC1_DATA3 
+TM5_ECNT
+PWM00
+UART3_RTS
+USBHL3_DP
+EBI_DATA10 ","General purpose digital I/O pin 
+RMII1 Transmit Enable output pin 
+SD1 / eMMC1 data line bit 3 
+Timer5 event counter input/toggle output pin
+PWM00 counter synchronous trigger output pin
+UART3 request to Send output pin USB 1.1 host lite port 3 differential signal D+
+EBI data bus bit 10 ",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+47,"PF.6
+RMII1_TXD1
+SD1_nCD
+TM4_EXT
+PWM01
+UART3_RXD
+USBHL4_DM
+EBI_DATA11 ","General purpose digital I/O pin RMII1 Transmit Data bus bit 1 SD1 card detect input pin Timer4 external capture input/toggle output pin
+PWM01 counter synchronous trigger output pin
+UART3 data receiver input pin 
+USB 1.1 host lite port 4 differential signal D-
+EBI data bus bit 11",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+48,VDD12 ,Core power 1.2V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+49,"PF.7 RMII1_TXD0 UART1_CTS TM5_EXT PWM02 UART3_TXD USBHL4_DP EBI_DATA12","General purpose digital I/O pin RMII1 Transmit Data bus bit 0 UART1 clear to Send input pin Timer5 external capture input/toggle output pin
+PWM02 counter synchronous trigger output pin
+UART3 data transmitter output pin 
+USB 1.1 host lite port 4 differential signal D+
+EBI data bus bit 12",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+50,"PF.8 RMII1_MDIO UART1_RTS TM1_TGL PWM03 USBHL5_DM EBI_DATA13","General purpose digital I/O pin RMII1 PHY Management Data pin 
+UART1 request to Send output pin Timer1 event counter input/toggle output pin
+PWM03 counter synchronous trigger output pin
+USB 1.1 host lite port 5 differential signal D-
+EBI data bus bit 13",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+51,"PF.9 RMII1_MDC UART1_RXD TM1_EXT PWM10 USBHL5_DP EBI_DATA14","General purpose digital I/O pin RMII1 PHY Management Clock output pin
+UART1 data receiver input pin Timer1 external capture input/toggle output pin
+PWM10 counter synchronous trigger output pin
+USB 1.1 host lite port 5 differential signal D+
+EBI data bus bit 14",FALSE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+52,"PF.11 UART0_RXD","General purpose digital I/O pin UART0 data receiver input pin",TRUE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+53,"PF.12
+UART0_TXD","General purpose digital I/O pin
+UART0 data transmitter output pin ",TRUE,Port F,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+54,VDD33,IO power 3.3V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+55,XT_IN,External 12 MHz crystal input pin,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+56,XT_OUT,External 12 MHz crystal output pin,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE
+57,"PE.11
+USB0_VBUSVLD","General purpose digital I/O pin USB0 VBUS valid indication pin",FALSE,Port E,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+58,VDD12,Core power 1.2V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+59,VUSB1_VDD33,USB1 power 3.3V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+60,VUSB0_VDD12,USB0 power 1.2V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+61,USB0_DM,USB0 differential signal D-,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+62,USB0_DP,USB0 differential signal D+,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+63,VUSB0_VDD33,USB0 power 3.3V,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+64,USB0_REXT,USB0 module reference resistor,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+EPAD,VSS,Digital ground,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE

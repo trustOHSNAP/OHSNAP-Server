@@ -1,0 +1,143 @@
+
++------------------------------------------------------------+
+|                                                            |
+|                OHSNAP QEMU-BASED EMULATOR                  |
+|                                                            |
++------------------------------------------------------------+
+
+NAND boot!
+
+U-Boot 2016.11-gbf0ff9f (Sep 09 2020 - 09:30:58 +0800)
+
+CPU: NUC980
+Board: NUC980
+DRAM:  64 MiB
+NAND:  256 MiB
+In:    serial
+Out:   serial
+Err:   serial
+Net:   Net Initialization Skipped
+No ethernet found.
+
+Hit any key to stop autoboot:  2  1  0 
+
+NAND read: device 0 offset 0x200000, size 0x800000
+ 8388608 bytes read: OK
+
+NAND read: device 0 offset 0x1000000, size 0x800000
+ 8388608 bytes read: OK
+
+## Booting kernel from Legacy Image at 00007fc0 ...
+   Image Name:   Linux-4.4.207
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    8302824 Bytes = 7.9 MiB
+   Load Address: 00008000
+   Entry Point:  00008000
+   Verifying Checksum ... OK
+
+## Loading init Ramdisk from Legacy Image at 02007fc0 ...
+   Image Name:   uInitrd
+   Image Type:   ARM Linux RAMDisk Image (gzip compressed)
+   Data Size:    7591811 Bytes = 7.2 MiB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Verifying Checksum ... OK
+   XIP Kernel Image ... OK
+
+Starting kernel ...
+
+Uncompressing Linux... done, booting the kernel.
+Booting Linux on physical CPU 0x0
+Linux version 4.4.207 (andy@YA-T470P) (gcc version 4.8.4 (GCC) ) #20 PREEMPT Wed Sep 9 09:29:35 CST 2020
+CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00093177
+CPU: VIVT data cache, VIVT instruction cache
+Machine: NUC980
+Memory policy: Data cache writeback
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+Kernel command line: root=/dev/ram0 console=ttyS0,115200n8 rdinit=/sbin/init mem=64M
+PID hash table entries: 256 (order: -2, 1024 bytes)
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Memory: 47000K/65536K available (2838K kernel code, 228K rwdata, 904K rodata, 6296K init, 195K bss, 18536K reserved, 0K cma-reserved)
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+    vmalloc : 0xc4800000 - 0xff800000   ( 944 MB)
+    lowmem  : 0xc0000000 - 0xc4000000   (  64 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .text : 0xc0008000 - 0xc03afda4   (3744 kB)
+      .init : 0xc03b0000 - 0xc09d6000   (6296 kB)
+      .data : 0xc09d6000 - 0xc0a0f3e0   ( 229 kB)
+       .bss : 0xc0a0f3e0 - 0xc0a401a0   ( 196 kB)
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Preemptible hierarchical RCU implementation.
+	Build-time adjustment of leaf fanout to 32.
+NR_IRQS:545
+clocksource: nuc980-timer5: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 62215505635 ns
+sched_clock: 24 bits at 120kHz, resolution 8333ns, wraps every 69905062489ns
+Console: colour dummy device 80x30
+console [ttyS0] enabled
+Calibrating delay loop... 199380.17 BogoMIPS (lpj=996900864)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+CPU: Testing write buffer coherency: ok
+Setting up static identity map for 0x8400 - 0x843c
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 256 (order: -1, 3072 bytes)
+pinctrl core: initialized pinctrl subsystem
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+clocksource: Switched to clocksource nuc980-timer5
+NET: Registered protocol family 2
+TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+TCP: Hash tables configured (established 1024 bind 1024)
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+Trying to unpack rootfs image as initramfs...
+Freeing initrd memory: 7416K
+NetWinder Floating Point Emulator V0.97 (double precision)
+jitterentropy: Initialization failed with host not compliant with requirements: 2
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+io scheduler noop registered (default)
+nuc980_gpio_probe - pdev = nuc980-gpio
+nuc980-uart.0: ttyS0 at I/O 0x0 (irq = 36, base_baud = 750000) is a NUC980
+brd: module loaded
+libphy: nuc980_rmii0: probed
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+nuc980-ehci nuc980-ehci: Nuvoton NUC980 EHCI Host Controller
+nuc980-ehci nuc980-ehci: new USB bus registered, assigned bus number 1
+nuc980-ehci nuc980-ehci: irq 23, io mem 0xb0015000
+nuc980-ehci nuc980-ehci: USB 2.0 started, EHCI 0.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: config failed, hub doesn't have any ports! (err -19)
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+usb_hcd_nuc980_probe, id = 0, name: nuc980-ohci.0, 0
+nuc980-ohci nuc980-ohci.0: Nuvoton NUC980 OHCI Host Controller
+nuc980-ohci nuc980-ohci.0: new USB bus registered, assigned bus number 2
+nuc980-ohci nuc980-ohci.0: irq 24, io mem 0xb0017000
+nuc980-ohci nuc980-ohci.0: init err (00000000 0000)
+can't start nuc980-ohci
+nuc980-ohci nuc980-ohci.0: startup error -75
+nuc980-ohci nuc980-ohci.0: USB bus 2 deregistered
+nuc980-ohci: probe of nuc980-ohci.0 failed with error -75
+usb_hcd_nuc980_probe, id = 1, name: nuc980-ohci.1, 0
+usb_hcd_nuc980_probe, id = 2, name: nuc980-ohci.2, 0
+usb_hcd_nuc980_probe, id = 3, name: nuc980-ohci.3, 0
+usb_hcd_nuc980_probe, id = 4, name: nuc980-ohci.4, 0
+usb_hcd_nuc980_probe, id = 5, name: nuc980-ohci.5, 0
+usb_hcd_nuc980_probe, id = 6, name: nuc980-ohci.6, 0
+usbcore: registered new interface driver usb-storage
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+NET: Registered protocol family 17
+Freeing unused kernel memory: 6296K
+
+
